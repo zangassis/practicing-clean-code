@@ -1,0 +1,36 @@
+public class UnifiedClass
+{
+
+    public class EmployeeRepository 
+    {
+        public void RegisterNewEmployee()...
+
+        public void UpdateEmployee()...
+
+        public void DeleteEmployee()...
+        
+        private List<Notification> GetElegibleEmplyees()...
+
+        private IQueryable<Employee> GetEmployeesByNationality(bool isNational)...
+    }
+
+    
+
+    public class ProcessFinancialOperationsService
+    {
+        public decimal CalculateAbsenceDiscount(decimal absences, int paycheck)...
+
+        public decimal CalculateAbsenceDiscount(decimal absences, int paycheck)...
+        
+        public void ProcessEmployeeRates()...
+        
+        private void CalculateEmployeesRates(IEnumerable<Employee> employees, bool isNational)...
+    }
+	
+    public class ProcessNotificationService
+    {
+        public void SendVacationNotificationToEligibleEmployees()...
+        
+        private void SendNotification(List<Employee> employees)...
+    }
+}
